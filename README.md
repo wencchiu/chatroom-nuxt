@@ -3,7 +3,8 @@
 > This is a web chatroom app running on your local server.
 
 ## Usage
-Required: node >= 8.9.0
+node version >= 8.9.0<br>
+yarn version >= 1.17(recommanded)
 ``` bash
 // install dependencies
 $ yarn install
