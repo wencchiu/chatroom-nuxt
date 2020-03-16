@@ -1,22 +1,18 @@
-# nuxt-test
+# chatroom-nuxt 
 
-> test
+> This is a web chatroom app running on your local server.
 
-## Build Setup
-
+## Usage
+Required: node >= 8.9.0
 ``` bash
-# install dependencies
+// install dependencies
 $ yarn install
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+// launch server
+$ node server.js
 
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Info
+> This SPA project is built by [Nuxt.js](https://nuxtjs.org/) framework and running on a local server([Express.js](https://expressjs.com/)). 
+<br>Chat messages are handling by a websocket server using [ws](https://www.npmjs.com/package/ws#server-broadcast) module.
