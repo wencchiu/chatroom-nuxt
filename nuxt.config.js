@@ -1,10 +1,10 @@
 export default {
-  mode: 'universal',
+  mode: 'spa',
   /*
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'HAPPY CHATROOM',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -38,13 +38,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-    '@nuxtjs/pwa',
-    // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
-  ],
+  modules: [],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
@@ -54,6 +48,12 @@ export default {
    ** Build configuration
    */
   build: {
+    babel: {
+      babelrc: false,
+      cacheDirectory: undefined,
+      presets: ['@nuxt/babel-preset-app']
+    },
+
     /*
      ** You can extend webpack config here
      */
